@@ -1,15 +1,15 @@
 {
-    "name": "plivo/plivo-php",
+    "name": "augwa/plivo-php",
     "description": "Plivo PHP helper library to access PlivoCloud API and generate Plivo XML",
     "authors": [
         {
             "name": "Plivo Team",
             "email": "hello@plivo.com"
         },
-	{
-	    "name": "Ben McInturff",
-	    "email": "benmcinturff@gmail.com"
-	},
+        {
+            "name": "Ben McInturff",
+            "email": "benmcinturff@gmail.com"
+        },
         {
             "name": "Adam Homsi",
             "email": "adam.homsi@gmail.com"
@@ -17,13 +17,20 @@
         {
             "name": "Radu Topala",
             "email": "radu.topala@trisoft.ro"
+        },
+        {
+            "name": "Jonathan Dahan",
+            "email": "jonathan@augwa.com"
         }
     ],
     "license": "MIT",
     "require": {
+        "php": ">=5.6.0",
         "guzzlehttp/guzzle": "^6.0"
     },
     "autoload": {
-         "classmap": ["plivo.php"]
+        "psr-4": {
+            "Plivo\\": "src/"
+        }
     }
 }
